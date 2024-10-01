@@ -8,7 +8,7 @@ pipeline {
                 script {
                     def h = getCommitHash()
                     echo """
-                    COMMIT HASH IS: ${h}
+                    COMMIT HASH IS: ${h}, OK?
                     """
                 }
             }
