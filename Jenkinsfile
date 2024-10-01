@@ -1,4 +1,4 @@
-@Library('jsl-common@main')
+// @Library('jsl-common@main')
 
 pipeline {
     agent any
@@ -6,7 +6,7 @@ pipeline {
         stage('Summary') {
             steps {
                 script {
-                    def h = getCommitHash()
+                    def h = "TEST" // getCommitHash()
                     echo """
                     COMMIT HASH IS: ${h}, OK? This time?
                     """
